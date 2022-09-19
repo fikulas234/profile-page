@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User profile</title>
+    <link rel="stylesheet" href="theme/css/profile.css" />
+  </head>
+
+  <body>
+    <nav>
+      <ul class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">User</a></li>
+        <li id="user">User profile</li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="left-cards">
+        <div class="card lc-one">
+          <div class="avatar">
+            <img src="theme/img/slika.png" alt="profile avatar" />
+          </div>
+          <div class="description">
+            <h4>John Doe</h4>
+            <p>Web Developer</p>
+            <p>20 Cooper Square, New York, NY 10003, USA</p>
+            <button id="follow-button">Follow</button>
+            <button id="message-button">Message</button>
+          </div>
+        </div>
+        <div class="card lc-two">
+          <ul>
+            <li>
+              <h6>Website</h6>
+              <span>https://website.com</span>
+            </li>
+
+            <li>
+              <h6>Github</h6>
+              <span>https://github.com</span>
+            </li>
+
+            <li>
+              <h6>Twitter</h6>
+              <span>https://twitter.com</span>
+            </li>
+
+            <li>
+              <h6>Instagram</h6>
+              <span>https://www.instagram.com</span>
+            </li>
+
+            <li>
+              <h6>Facebook</h6>
+              <span>https://www.facebook.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="right-cards">
+        <div class="card rc-one">
+          <form action="" method="post">
+            <label for="fname">Full Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              value="John Doe"
+              disabled
+            /><br />
+            <hr />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value="some.email@gmail.com"
+              disabled
+            /><br />
+            <hr />
+            <label for="phone">Phone</label>
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              value="+1 (123)456-7890"
+              disabled
+            /><br />
+            <hr />
+            <label for="mobile">Mobile</label>
+            <input
+              type="text"
+              id="mobile"
+              name="mobile"
+              value="+1 (123)456-7890"
+              disabled
+            /><br />
+            <hr />
+            <label for="adress">Address</label>
+            <input
+              type="text"
+              id="address"
+              name="adress"
+              value="20 Cooper Square, New York, NY 10003, USA"
+              disabled
+            /><br />
+            <hr />
+            <button id="edit-button">Edit</button>
+          </form>
+        </div>
+        <div class="card rc-two">
+          <h6>
+            <i>assignment</i>
+            Learning Status
+          </h6>
+          <br />
+          <label for="html">HTML</label><br />
+          <progress id="html" value="80" max="100"></progress><br />
+          <label for="css">CSS</label><br />
+          <progress id="css" value="50" max="100"></progress><br />
+          <label for="javascript">Javascript</label><br />
+          <progress id="javascript" value="10" max="100"></progress><br />
+          <label for="php">PHP</label><br />
+          <progress id="php" value="1" max="100"></progress><br />
+        </div>
+        <div class="card rc-three">
+          <h6>
+            <i>assignment</i>
+            Learning Status
+          </h6>
+          <br />
+          <label for="html">HTML</label><br />
+          <progress id="html" value="80" max="100"></progress><br />
+          <label for="css">CSS</label><br />
+          <progress id="css" value="50" max="100"></progress><br />
+          <label for="javascript">Javascript</label><br />
+          <progress id="javascript" value="10" max="100"></progress><br />
+          <label for="php">PHP</label><br />
+          <progress id="php" value="1" max="100"></progress><br />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

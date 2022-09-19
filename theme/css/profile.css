@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #e2e8f0;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  /* border: 1px dotted red; */
+  min-width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+img {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.rc-two h6,
+.rc-three h6 {
+  padding-bottom: 20px;
+}
+
+h6,
+h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+nav {
+  max-width: 1200px;
+  margin: 30px auto;
+  background-color: #6495ed;
+  border-radius: 4px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding-left: 15px;
+}
+
+nav ul li {
+  padding: 0;
+  line-height: 50px;
+  color: white;
+}
+
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #191970;
+}
+
+#user {
+  color: #191970;
+  font-weight: 500;
+}
+
+ul {
+  padding: 0;
+}
+
+p {
+  color: #6c757d;
+}
+
+i {
+  color: #6495ed;
+  padding-right: 5px;
+}
+
+.lc-one {
+  height: 300px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.lc-two {
+  height: 280px;
+  display: flex;
+}
+
+.lc-two ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.lc-two ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 380px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 0 10px;
+}
+
+.lc-one,
+.lc-two {
+  width: 100%;
+}
+
+.rc-one {
+  width: 100%;
+  height: 320px;
+}
+
+.rc-two,
+.rc-three {
+  height: 300px;
+  width: 360px;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left-cards,
+.right-cards {
+  height: 680px;
+  padding: 20px 0 20px 0px;
+  margin: 0 10px;
+}
+
+.left-cards {
+  width: 380px;
+}
+
+.right-cards {
+  width: 780px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 20px;
+  justify-content: space-between;
+}
+
+ul hr {
+  margin: 0;
+  width: 100%;
+}
+
+hr {
+  margin-bottom: 12px;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: inline-block;
+  padding-right: 20px;
+  width: 150px;
+  height: 30px;
+  font-weight: 500;
+}
+
+input {
+  border: none;
+  background-color: white;
+  font-size: 14px;
+  width: 50%;
+}
+
+progress {
+  width: 100%;
+}
+
+form {
+  height: 100%;
+  padding: 16px;
+}
+
+.avatar,
+.description {
+  width: 100%;
+}
+
+#follow-button:hover {
+  background-color: #4169e1;
+}
+
+#message-button:hover {
+  background-color: #6495ed;
+  color: white;
+}
+
+#edit-button:hover {
+  background-color: #008080;
+}
+
+#follow-button {
+  background-color: #6495ed;
+  border-radius: 4px;
+  color: white;
+  width: 70px;
+  height: 30px;
+  border: 1px solid #6495ed;
+}
+
+#message-button {
+  background-color: white;
+  border-radius: 4px;
+  color: #6495ed;
+  width: 70px;
+  height: 30px;
+  border: 1px solid #6495ed;
+}
+
+#edit-button {
+  background-color: #5f9ea0;
+  border-radius: 4px;
+  color: white;
+  width: 60px;
+  height: 30px;
+  border: 1px solid #5f9ea0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+
+  .rc-two,
+  .rc-three {
+    max-width: 260px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* .container {
+    max-width: 800px;
+  } */
+
+  .rc-two,
+  .rc-three {
+    max-width: 220px;
+  }
+}
+
+@media only screen and (max-width: 889px) {
+  .container {
+    max-width: 600px;
+    display: block;
+  }
+
+  .left-cards {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+  }
+
+  .right-cards {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .rc-two,
+  .rc-three {
+    max-width: 250px;
+  }
+
+  .lc-two ul li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 595px) {
+  .rc-two,
+  .rc-three {
+    max-width: 180px;
+  }
+}
