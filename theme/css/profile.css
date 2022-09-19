@@ -247,8 +247,8 @@ form {
 }
 
 .soc-networks img {
-  width: 30px;
-  height: 30px;
+  max-width: 30px;
+  max-height: 30px;
   border-radius: 0;
   align-items: center;
 }
@@ -284,7 +284,7 @@ form {
 @media only screen and (max-width: 992px) {
   .rc-two,
   .rc-three {
-    max-width: 220px;
+    width: 220px;
   }
 }
 
@@ -308,11 +308,12 @@ form {
   .right-cards {
     width: 100%;
     margin: 0 auto;
+    height: 100%;
   }
 
   .rc-two,
   .rc-three {
-    max-width: 250px;
+    width: 100%;
   }
 
   .lc-two ul li {
@@ -323,8 +324,22 @@ form {
 }
 
 @media only screen and (max-width: 595px) {
+  .right-cards {
+    display: block;
+  }
+
+  .card {
+    width: 100%;
+  }
+
   .rc-two,
   .rc-three {
-    max-width: 200px;
+    max-width: 600px;
+  }
+
+  .rc-one,
+  .rc-two,
+  .rc-three {
+    margin-bottom: 20px;
   }
 }
